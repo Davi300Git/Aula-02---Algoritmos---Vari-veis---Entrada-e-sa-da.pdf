@@ -7,18 +7,18 @@ public class MinutosDesdeInicioDoDia {
     //valores lidos: 13 e 15
     //impressão: 795 minutos
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner tempo = new Scanner(System.in);
 
         System.out.print("Digite a hora (0 a 23): ");
-        int hora = scanner.nextInt();
+        int hora = tempo.nextInt();
 
         System.out.print("Digite os minutos (0 a 59): ");
-        int minutos = scanner.nextInt();
+        int minutos = tempo.nextInt();
 
         int minutosTotais = (hora * 60) + minutos;
 
         System.out.println("Minutos desde o início do dia: " + minutosTotais);
 
-        scanner.close();
+        tempo.close();
     }
 }
