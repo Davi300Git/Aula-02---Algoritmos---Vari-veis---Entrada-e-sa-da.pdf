@@ -7,17 +7,17 @@ public class AreaRetangulos {
     //inferior). Os únicos dados conhecidos são os valores a, b, d
     
      public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner dados = new Scanner(System.in);
 
         // Solicita os dados
         System.out.print("Digite o valor de a (base do retângulo superior): ");
-        double a = input.nextDouble();
+        double a = dados.nextDouble();
 
         System.out.print("Digite o valor de b (base do retângulo inferior): ");
-        double b = input.nextDouble();
+        double b = dados.nextDouble();
 
         System.out.print("Digite o valor de d (altura dos retângulos): ");
-        double d = input.nextDouble();
+        double d = dados.nextDouble();
 
         // Calcula as áreas
         double A1 = a * d;
@@ -30,7 +30,7 @@ public class AreaRetangulos {
         System.out.println("Área do retângulo inferior (A2): " + A2);
         System.out.println("Área total (AT): " + AT);
 
-        input.close();
+        dados.close();
     }
     
 }
